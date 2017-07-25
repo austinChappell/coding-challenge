@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.lab-intro {
+  border-bottom: solid 1px #000;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.lab-intro h1, .lab-intro h2 {
+  font-weight: 400;
+}
+
+.lab-intro h1 {
+  background-color: black;
+  color: #FFF;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px 50px;
+}
+
+.lab-intro h2 {
+  font-size: 1.1em;
+}
+
+.intro-content {
+  padding: 10px 50px;
+}
+
+
+
+
+#mocha-stats {
+  background-color: #FFF;
+  top: 0;
+  right: 0;
+}

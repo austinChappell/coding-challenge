@@ -1,12 +1,32 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <script type="text/javascript" src="script.js">
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="./lib/mocha.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="lab-intro">
+    <header>
+      <h1>Coding Challenge</h1>
+    </header>
 
-    </script>
-  </body>
+  </div>
+  <div id="mocha"></div>
+
+  <script src="./lib/jquery.js"></script>
+  <script src="./lib/expect-0-3-1.js"></script>
+  <script src="./lib/should.js"></script>
+  <script src="./lib/mocha.js"></script>
+  <script src="./lib/chai.js"></script>
+
+  <script>mocha.setup('bdd')</script>
+  <script src="script.js"></script>
+  <script src="test.js"></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+</body>
 </html>
