@@ -97,16 +97,6 @@ function compareObjects(obj1, obj2) {
   return true;
 };
 
-// CREATE AN ARRAY OF KEYS FROM AN OBJECT
-function objToKeyArr(obj) {
-  return Object.keys(obj);
-}
-
-// CREATE AN ARRAY OF VALUES FROM AN OBJECT
-function objToValArr(obj) {
-  return Object.values(obj);
-}
-
 // SORT THROUGH SUB-ARRAYS. THERE IS REDUNDANCY HERE THAT WOULD NEED TO BE REFACTORED.
 function sortSubArrays(array) {
   array.forEach(function(item) {
@@ -190,10 +180,10 @@ function compareArrays(arr1, arr2) {
   return true;
 }
 
-let keyArr1 = objToKeyArr(offerA);
-let keyArr2 = objToKeyArr(offerB);
-let valArr1 = objToValArr(offerA);
-let valArr2 = objToValArr(offerB);
+let keyArr1 = Object.keys(offerA);
+let keyArr2 = Object.keys(offerB);
+let valArr1 = Object.values(offerA);
+let valArr2 = Object.values(offerB);
 
 console.log(compareArrays(keyArr1, keyArr2));
 console.log(compareArrays(valArr1, valArr2));
